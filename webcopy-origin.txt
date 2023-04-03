@@ -1,0 +1,272 @@
+Uri: https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap
+File Name: C:\Downloaded Web Sites\mousemc.ru\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6aX8.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6aX8.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9aX8.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8aX8.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9aX8.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16aX8.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6aX8.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9aX8.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9aX8.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Uw-.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Uw-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC70w-.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC70w-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Ew-.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Ew-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr70w-.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr70w-.ttf
+Content Type: font/ttf
+
+Uri: https://mousemc.ru/
+File Name: C:\Downloaded Web Sites\mousemc.ru\index.htm
+Content Type: text/html
+
+Uri: https://mousemc.ru/assets/css/buy.css
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\css\buy.css
+Content Type: text/css
+
+Uri: https://mousemc.ru/assets/css/theme.min.css
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\css\theme.min.css
+Content Type: text/css
+
+Uri: https://mousemc.ru/assets/favicon/apple-touch-icon.png
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\favicon\apple-touch-icon.png
+Content Type: image/png
+
+Uri: https://mousemc.ru/assets/favicon/favicon-16x16.png
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\favicon\favicon-16x16.png
+Content Type: image/png
+
+Uri: https://mousemc.ru/assets/favicon/favicon-32x32.png
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\favicon\favicon-32x32.png
+Content Type: image/png
+
+Uri: https://mousemc.ru/assets/favicon/safari-pinned-tab.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\favicon\safari-pinned-tab.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/favicon/site.webmanifest
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\favicon\site.webmanifest
+Content Type: 
+
+Uri: https://mousemc.ru/assets/js/theme.min.js
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\js\theme.min.js
+Content Type: application/javascript
+
+Uri: https://mousemc.ru/assets/landing/buy.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\buy.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/discord.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\discord.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/faq_art.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\faq_art.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/skyvoxel1.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\skyvoxel1.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/skyvoxel2.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\skyvoxel2.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/skyvoxel3.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\skyvoxel3.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/skyvoxel4.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\skyvoxel4.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/skyvoxel5.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\skyvoxel5.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/sponsor/Frame 82.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\sponsor\Frame 82.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/sponsor/Frame 83.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\sponsor\Frame 83.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/sponsor/Frame 84.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\sponsor\Frame 84.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/sponsor/Frame 87.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\sponsor\Frame 87.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/sponsoring.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\sponsoring.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/stats.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\stats.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/vk.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\vk.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/landing/yt.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\landing\yt.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/skyvoxel.png
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\skyvoxel.png
+Content Type: image/png
+
+Uri: https://mousemc.ru/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\vendor\bootstrap\dist\js\bootstrap.bundle.min.js
+Content Type: application/javascript
+
+Uri: https://mousemc.ru/assets/vendor/boxicons/css/boxicons.min.css
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\vendor\boxicons\css\boxicons.min.css
+Content Type: text/css
+
+Uri: https://mousemc.ru/assets/vendor/boxicons/fonts/boxicons.eot
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\vendor\boxicons\fonts\boxicons.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://mousemc.ru/assets/vendor/boxicons/fonts/boxicons.svg
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\vendor\boxicons\fonts\boxicons.svg
+Content Type: image/svg+xml
+
+Uri: https://mousemc.ru/assets/vendor/boxicons/fonts/boxicons.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\vendor\boxicons\fonts\boxicons.ttf
+Content Type: application/font-sfnt
+
+Uri: https://mousemc.ru/assets/vendor/boxicons/fonts/boxicons.woff
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\vendor\boxicons\fonts\boxicons.woff
+Content Type: application/font-woff
+
+Uri: https://mousemc.ru/assets/vendor/boxicons/fonts/boxicons.woff2
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\vendor\boxicons\fonts\boxicons.woff2
+Content Type: 
+
+Uri: https://mousemc.ru/assets/vendor/jarallax/dist/jarallax-element.min.js
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\vendor\jarallax\dist\jarallax-element.min.js
+Content Type: application/javascript
+
+Uri: https://mousemc.ru/assets/vendor/jarallax/dist/jarallax.min.js
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\vendor\jarallax\dist\jarallax.min.js
+Content Type: application/javascript
+
+Uri: https://mousemc.ru/assets/vendor/jquery-3.6.0.min.js
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\vendor\jquery-3.6.0.min.js
+Content Type: application/javascript
+
+Uri: https://mousemc.ru/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\vendor\smooth-scroll\dist\smooth-scroll.polyfills.min.js
+Content Type: application/javascript
+
+Uri: https://mousemc.ru/assets/vendor/swiper/swiper-bundle.min.css
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\vendor\swiper\swiper-bundle.min.css
+Content Type: text/css
+
+Uri: https://mousemc.ru/assets/vendor/swiper/swiper-bundle.min.js
+File Name: C:\Downloaded Web Sites\mousemc.ru\assets\vendor\swiper\swiper-bundle.min.js
+Content Type: application/javascript
+
+Uri: https://mousemc.ru/oferta.pdf
+File Name: C:\Downloaded Web Sites\mousemc.ru\oferta.pdf
+Content Type: application/pdf
+
+Uri: https://mousemc.ru/public/style.css
+File Name: C:\Downloaded Web Sites\mousemc.ru\public\style.css
+Content Type: text/css
+
+Uri: https://mousemc.ru/store
+File Name: C:\Downloaded Web Sites\mousemc.ru\store.html
+Content Type: text/html
+
+Uri: https://mousemc.ru/wiki
+File Name: C:\Downloaded Web Sites\mousemc.ru\wiki.html
+Content Type: text/html
+
+Uri: https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css
+File Name: C:\Downloaded Web Sites\mousemc.ru\boxicons@2.1.2\css\boxicons.min.css
+Content Type: text/css
+
+Uri: https://unpkg.com/boxicons@2.1.2/fonts/boxicons.eot
+File Name: C:\Downloaded Web Sites\mousemc.ru\boxicons@2.1.2\fonts\boxicons.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://unpkg.com/boxicons@2.1.2/fonts/boxicons.svg?
+File Name: C:\Downloaded Web Sites\mousemc.ru\boxicons@2.1.2\fonts\boxicons.svg
+Content Type: image/svg+xml
+
+Uri: https://unpkg.com/boxicons@2.1.2/fonts/boxicons.ttf
+File Name: C:\Downloaded Web Sites\mousemc.ru\boxicons@2.1.2\fonts\boxicons.ttf
+Content Type: font/ttf
+
+Uri: https://unpkg.com/boxicons@2.1.2/fonts/boxicons.woff
+File Name: C:\Downloaded Web Sites\mousemc.ru\boxicons@2.1.2\fonts\boxicons.woff
+Content Type: font/woff
+
+Uri: https://unpkg.com/boxicons@2.1.2/fonts/boxicons.woff2
+File Name: C:\Downloaded Web Sites\mousemc.ru\boxicons@2.1.2\fonts\boxicons.woff2
+Content Type: font/woff2
+

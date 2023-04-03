@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mouse</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Mouse - Приватный сервер Minecraft.">
+    <meta name="author" content="Mouse">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+        <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #141414;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== undefined && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>  
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Загрузка</span>
+      </div>
+    </div>
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <style>
+
+.navbar-icon {
+
+  width:50px;
+  height:50px;
+  background-color:#e1e1e1;
+  display: none;
+
+}
+
+.dark-mode .navbar-icon {
+
+background-color:#181818;
+display: none;
+
+}
+
+
+.nav-line {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.dark-mode .nav-line {
+  border-bottom: 1px solid #202224;
+}
+
+</style>
+
+
+<header class="navbar navbar-expand-lg navbar-light nav-line">
+  <div class="container">
+    <a href="index.htm" class="navbar-brand">
+      <img src="assets/skyvoxel.png" width="47">
+    </a>
+    <button class="card navbar-toggler ms-auto navbar-icon order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2" aria-expanded="false">
+      <span class="navbar-toggler-icon" style="margin-left: 9px; display:none;"></span>
+    </button>
+    <div class="form-check form-switch mode-switch order-lg-2" data-bs-toggle="mode" style="margin-bottom: -3px;margin-left: 30px;">
+      <input type="checkbox" class="form-check-input order-1" id="theme-mode">
+          </div>
+    <nav id="navbarCollapse2" class="collapse navbar-collapse">
+      <hr class="d-lg-none mt-3 mb-2">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.htm" class="nav-link">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a href="store.html" class="nav-link">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a href="wiki.html" class="nav-link">Правила ГШ</a>
+        </li>
+        <li class="nav-item">
+          <a target="_blank" href="http://130.61.78.231:8080/" class="nav-link">Карта</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+ 
+
+      <!-- General Info -->
+
+      <style>
+
+.bga-gray {
+
+  background-color: #f3f3f3;
+  color: #fff
+
+}
+
+.dark-mode .bga-gray {
+
+background-color: #1a1a1a;
+color: #fff
+
+}
+
+.text-main {
+
+color:#0a0a0a;
+
+}
+
+.dark-mode .text-main {
+
+color:#b9b9b9;
+
+
+}
+
+  </style>
+
+<iframe src="https://batbarn.gitbook.io/untitled-1/abouting/osnovnoe" width="650" height="700"> </iframe>
+
+          <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script></main></body></html>

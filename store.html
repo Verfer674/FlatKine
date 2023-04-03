@@ -1,0 +1,645 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Godshield</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Godshield - Приватный сервер Minecraft.">
+    <meta name="author" content="Godshield">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#1d72f2">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#1d72f2">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link href='boxicons%402.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="assets/vendor/jquery-3.6.0.min.js"></script>
+    <link href="css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+        <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #141414;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>  
+  </head>
+
+  <div class="modal fade" id="sponsor_info" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content" style="padding-right:0; padding-left:0; border-radius:20px;">
+            <div class="modal-body" style="padding:15;">
+  <div class="card-body" style="text-align:-webkit-center; padding: 0px 24px;">
+  <div class="swiper swiper-nav-onhover" data-swiper-options='{
+  "spaceBetween": 20,
+  "loop": true,
+  "pagination": {
+    "el": ".swiper-pagination",
+    "clickable": true
+  },
+  "navigation": {
+    "prevEl": ".btn-prev",
+    "nextEl": ".btn-next"
+  }
+}'>
+  <div class="swiper-wrapper">
+
+    <!-- Item -->
+    <div class="swiper-slide">
+      </div>
+      <div style="margin-top: 21px; max-height:300px; height:100%;margin-bottom: 40px;">
+      <div style="font-size:16px; margin-top:4px; color:#777;width: 270px;font-weight: 500;">Представляем вашему вниманию, все возможности Спонсорки.</div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="ratio ratio-16x9 bg-secondary">
+      </div>
+      <div style="margin-top: 21px; max-height:300px; height:100%;margin-bottom: 40px;">
+      <div class="text-modal-sponsor">Приоритетная очередь</div>
+      <div style="font-size:16px; margin-top:4px; color:#777;width: 270px;font-weight: 500;">Входите на заполненный сервер.</div>
+      </div>
+    </div>
+
+    <!-- Item -->
+    <div class="swiper-slide">
+      <div class="ratio ratio-16x9 bg-secondary">
+      </div>
+      <div style="margin-top: 21px; max-height:300px; height:100%;margin-bottom: 40px;">
+      <div class="text-modal-sponsor">Уникальный значок</div>
+      <div style="font-size:16px; margin-top:4px; color:#777;width: 270px;font-weight: 500;">Получите уникальный значок Спонсора на сервере и роль в Дискорде.</div>
+      </div>
+    </div>
+
+    <!-- Item -->
+    <div class="swiper-slide">
+      <div class="ratio ratio-16x9 bg-secondary">
+      </div>
+      <div style="margin-top: 21px; max-height:300px; height:100%;margin-bottom: 40px;">
+      <div style="font-size:16px; margin-top:4px; color:#777;width: 270px;font-weight: 500;">Собственный чат, который доступен только для Спонсоров.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Prev button -->
+  <button type="button" class="btn btn-prev btn-icon btn-sm me-2">
+    <i class="bx bx-chevron-left"></i>
+  </button>
+
+  <!-- Next button -->
+  <button type="button" class="btn btn-next btn-icon btn-sm ms-2">
+    <i class="bx bx-chevron-right"></i>
+  </button>
+
+  <!-- Pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  <!-- Body -->
+  <body style="height:100%;">
+  <div style="overflow-y:scroll; -webkit-overflow-scrolling: touch; scroll-behavior:smooth">
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Загрузка</span>
+      </div>
+    </div>
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <style>
+
+.navbar-icon {
+
+  width:50px;
+  height:50px;
+  background-color:#e1e1e1;
+  display: none;
+
+}
+
+.dark-mode .navbar-icon {
+
+background-color:#181818;
+display: none;
+
+}
+
+
+.nav-line {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.dark-mode .nav-line {
+  border-bottom: 1px solid #202224;
+}
+
+</style>
+
+
+<header class="navbar navbar-expand-lg navbar-light nav-line">
+  <div class="container">
+    <a href="index.htm" class="navbar-brand">
+      <img src="assets/skyvoxel.png" width="47">
+    </a>
+    <button class="card navbar-toggler ms-auto navbar-icon order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2" aria-expanded="false">
+      <span class="navbar-toggler-icon" style="margin-left: 9px; display:none;"></span>
+    </button>
+    <nav id="navbarCollapse2" class="collapse navbar-collapse">
+      <hr class="d-lg-none mt-3 mb-2">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.htm" class="nav-link">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a href="store.html" class="nav-link">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a target="_blank" href="https://batbarn.gitbook.io/untitled-1/abouting/osnovnoe" class="nav-link">Вики</a>
+        </li>
+        <li class="nav-item">
+          <a  href="pod.html" class="nav-link">Поддержка</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+      <link rel="stylesheet" href="assets/css/buy.css">
+
+<div class="buy_container">
+<div class="buy">
+<div class="my-1">
+<h5 style="margin-bottom:10px; font-size:19px;">Магазин Godshield</h5>
+<p class="fs-sm text-muted" style="max-width:20rem;">Покупая на этой странице, вы автоматически соглашаетесь с условиямиоферты</a>. <br><b></b></p>
+<hr class="my-4">
+
+
+    <div>
+
+<div class="page_punkt_title">Введите никнейм</div>
+<div style="margin-bottom:20px">
+<form action="store-buy" method="POST">
+    <input id="nickname_input" type="text" name="nickname_buyer" class="form-control" placeholder="Напишите ваш ник" rows="1" onkeyup="countChar1(this)">
+
+    <div id="text-counter">
+    <span style="font-size:13px; margin-bottom:12px; color:#585858" id="charNum1">0</span>
+    <div style="display:inline-flex; font-size:13px; margin-left:-3px; color:#484848; font-weight:500">/36</div>
+    </div>
+</form></div>
+
+<div id="all" style="display:none;">
+
+<div>
+<div class="page_punkt_title">Выберите товар</div>
+<div id="access" class="card-buy">
+<div id="image-card-access" class="image-card">
+<svg xmlns="http://www.w3.org/2000/svg" style="color:#0089ff" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
+</svg>
+</div>
+
+<div style="flex-direction: column;">
+<div class="title-card">Моментальная проходка</div>
+<div class="desc">Если вы не хотите ждать одобрения заявки.</div>
+</div>
+
+<div id="radio-access" class="selectbuy"></div>
+
+</div>
+</div>
+
+
+  <div>
+<div id="sponsor" class="card-buy">
+<div id="image-card-sponsor" class="image-card">
+<svg xmlns="http://www.w3.org/2000/svg" style="color:#ff00d4" viewbox="0 0 20 20" fill="currentColor">
+  <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+</svg>
+</div>
+
+<div id="radio-sponsor" class="selectbuy"></div>
+
+</div>
+</div>
+  
+
+<div id="payment-select-menu" style="display:none; margin-top:20px">
+<div class="page_punkt_title">Выберите способ оплаты</div>
+<div class="selectpay-div">
+<div id="pay_other" class="selectpay">Основной <svg xmlns="http://www.w3.org/2000/svg" class="icon-payment" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+</svg></div>
+</div>
+
+<div id="descpay_other" class="descpay" style="display:none;">
+    <div class="titlepay">О данном способе оплаты</div>
+<div class="descinfopay">Данный способ оплаты подойдёт для большинства кошельков, карт. Поддерживаемые: QIWI, ЮMoney, СБП, Visa, Mastercard, Мир, Мобильная оплата Мегафон. По поводу роли на сайте и в Discord обращаться в тех. поддержку дискорда. Комиссия этой оплаты 4%.</div>
+</div>
+
+</div>
+
+<div>
+    <input id="input-product" name="product" style="display:none">
+    <input id="input-payment-metod" name="payment-met" style="display:none">
+    <input id="input-stime" name="stime" style="display:none">
+</div>
+
+<div>
+<button type="sumbit" id="pay-button" class="pay-button" style="display:none">Оплатить <span id="price"></span></button>
+</div>
+</form>
+
+</div>
+    </div>
+
+
+</div>
+</div>
+</div>
+
+
+<script>
+
+var access_price = '50₽';
+
+$(document).ready(function(){ 
+    $('#pay_card').on("click", function(){ 
+        $('#descpay_card').css('display','block');
+        $('#pay_card').attr('select', '');
+        $('#descpay_other').css('display','none');
+        $('#pay_other').removeAttr('select', '');
+        $('#pay-button').css('display','block');
+        $('#input-payment-metod').attr('value', 'selected-card');
+        $('#pay-button').css('display','block');
+    });
+});
+
+$(document).ready(function(){ 
+    $('#pay_other').on("click", function(){  
+        $('#descpay_other').css('display','block');
+        $('#pay_other').attr('select', '');
+        $('#descpay_card').css('display','none');
+        $('#pay_card').removeAttr('select', '');
+        $('#pay-button').css('display','block');
+        $('#input-payment-metod').attr('value', 'selected-other');
+        $('#pay-button').css('display','block');
+    });
+});
+
+$(document).ready(function(){  
+    $('#access').on("click", function(){  
+        $('#payment-select-menu').css('display','block');
+        $('#access').attr('select', '');
+        $('#radio-access').attr('select', '');
+        $('#sponsor').removeAttr('select', '');
+        $('#radio-sponsor').removeAttr('select', '');
+        $('#input-product').attr('value', 'access');
+        $('#price').text(access_price);
+        $('#select_opt_sponsor').css('display','none');
+        $('#month_sponsor').removeAttr('select', '');
+        $('#always_sponsor').removeAttr('select', '');
+        $('#pay_card').removeAttr('select', '');
+        $('#pay_other').removeAttr('select', '');
+        $('#descpay_other').css('display','none');
+        $('#descpay_card').css('display','none');
+        $('#pay-button').css('display','none');
+        $('#input-stime').removeAttr('value', '');
+    });
+});
+
+$(document).ready(function(){  
+    $('#sponsor').on("click", function(){ 
+        $('#sponsor').attr('select', '');
+        $('#radio-sponsor').attr('select', '');
+        $('#access').removeAttr('select', '');
+        $('#radio-access').removeAttr('select', '');
+        $('#input-product').attr('value', 'sponsor');
+        $('#select_opt_sponsor').css('display','block');
+        $('#payment-select-menu').css('display','none');
+        $('#pay-button').css('display','none');
+        $('#pay_card').removeAttr('select', '');
+        $('#pay_other').removeAttr('select', '');
+        $('#descpay_other').css('display','none');
+        $('#descpay_card').css('display','none');
+    });
+});
+
+$(document).ready(function(){  
+    $('#month_sponsor').on("click", function(){ 
+        $('#payment-select-menu').css('display','block');
+        $('#month_sponsor').attr('select', '');
+        $('#always_sponsor').removeAttr('select', '');
+        $('#input-stime').attr('value', 'month');
+        $('#price').text(sponsor_m_price);
+    });
+});
+
+$(document).ready(function(){  
+    $('#always_sponsor').on("click", function(){ 
+        $('#payment-select-menu').css('display','block');
+        $('#always_sponsor').attr('select', '');
+        $('#month_sponsor').removeAttr('select', '');
+        $('#input-stime').attr('value', 'always');
+        $('#price').text(sponsor_a_price);
+
+    });
+});
+
+
+function countChar1(val) {
+  var len = val.value.length;
+  if (len >= 37) {
+    val.value = val.value.substring(0, 36);
+  } else {
+    $('#charNum1').text(0 + len);
+  }
+
+  if (len <= 36) {
+
+$(document).ready(function(){
+$('#charNum1').css({'color':'#585858','font-weight':'400'});    
+});
+
+  }
+
+  if (len >= 36) {
+
+$(document).ready(function(){
+$('#charNum1').css({'color':'#ff5d5d','font-weight':'600'});    
+});
+
+  }
+
+  if (len <= 5) {
+
+$(document).ready(function(){
+$('#all').css({'display':'none'});    
+});
+
+  }
+
+  if (len >= 5) {
+
+$(document).ready(function(){
+$('#all').css({'display':'block'});    
+});
+
+  }
+
+  }
+
+  $('#nickname_input').on('keyup keypress', function(e) {
+  var keyCode = e.keyCode || e.which;
+  if (keyCode === 13) { 
+    e.preventDefault();
+    return false;
+  }
+});
+
+</script>
+
+
+ 
+      
+      <style>
+
+.mobile-menu {
+    bottom:0;
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+@media only screen and (max-width: 991px) {
+    .mobile-menu {
+      display: block;
+    }
+  }
+
+.mobile-menu-inside {
+    display:flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 70px;
+    background: #fbfbfb;
+    border-top:1px solid #c9c9c9;
+}
+
+.dark-mode .mobile-menu-inside {
+    background: #222222;
+    border-top: 1px solid #343434;
+}
+
+.mobile-menu-punkt {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack:center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:transparent;
+    background-color: transparent;
+    outline:0px;
+    border:0;
+    margin:0;
+    user-select:none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, padding-top 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    padding: 0px 12px;
+    max-width: 168px;
+    flex-direction: column;
+    flex:1 1 0%;
+    color:#565252;
+    font-weight: 500;
+}
+
+.dark-mode .mobile-menu-punkt {
+    color:#a1a1a1;
+}
+
+.mobile-menu-punkt:hover{
+    background: #dfdfdf;
+    color:#565252;
+}
+
+.dark-mode .mobile-menu-punkt:hover {
+    background: #363636;
+    color:#b3b3b3;
+}
+
+.mobile-menu-punkt-icon {
+    width:25px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+    </style>
+
+
+<div class="mobile-menu">
+<div class="mobile-menu-inside">
+    <a href="store.html" class="mobile-menu-punkt">
+    <svg xmlns="http://www.w3.org/2000/svg" class="mobile-menu-punkt-icon" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path>
+</svg>
+<span>Магазин</span>
+</a>
+
+
+    <a href="wiki.html" class="mobile-menu-punkt">
+    <svg xmlns="http://www.w3.org/2000/svg" class="mobile-menu-punkt-icon" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+</svg>
+<span>Вики</span>
+        </a>
+
+                    
+                    <a target="_blank" href="http://map.mousemc.fun:25575/" class="mobile-menu-punkt">
+    <svg xmlns="http://www.w3.org/2000/svg" class="mobile-menu-punkt-icon" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"></path>
+</svg>
+<span>Карта</span>
+</a>
+            
+</div>
+
+</div> 
+    
+    </main>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll="">
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Наверх</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </div>
+  
+  </body>
+  
+</html>

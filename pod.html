@@ -191,6 +191,113 @@
 <div class="button-wrapper">
     <a href="https://qiwi.com/payment/form/99999?extra[%27accountType%27]=nickname&extra[%27account%27]=VW4DE3" class="button">Поддержать</a>
   </div>
+      
+      
+.mobile-menu {
+    bottom:0;
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+@media only screen and (max-width: 991px) {
+    .mobile-menu {
+      display: block;
+    }
+  }
+
+.mobile-menu-inside {
+    display:flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 70px;
+    background: #fbfbfb;
+    border-top:1px solid #c9c9c9;
+}
+
+.dark-mode .mobile-menu-inside {
+    background: #222222;
+    border-top: 1px solid #343434;
+}
+
+.mobile-menu-punkt {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack:center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:transparent;
+    background-color: transparent;
+    outline:0px;
+    border:0;
+    margin:0;
+    user-select:none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, padding-top 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    padding: 0px 12px;
+    max-width: 168px;
+    flex-direction: column;
+    flex:1 1 0%;
+    color:#565252;
+    font-weight: 500;
+}
+
+.dark-mode .mobile-menu-punkt {
+    color:#a1a1a1;
+}
+
+.mobile-menu-punkt:hover{
+    background: #dfdfdf;
+    color:#565252;
+}
+
+.dark-mode .mobile-menu-punkt:hover {
+    background: #363636;
+    color:#b3b3b3;
+}
+
+.mobile-menu-punkt-icon {
+    width:25px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+    </style>
+
+
+<div class="mobile-menu">
+<div class="mobile-menu-inside">
+    <a href="store.html" class="mobile-menu-punkt">
+    <svg xmlns="http://www.w3.org/2000/svg" class="mobile-menu-punkt-icon" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path>
+</svg>
+<span>Магазин</span>
+</a>
+
+
+    <a href="https://batbarn.gitbook.io/untitled-1/abouting/osnovnoe" class="mobile-menu-punkt">
+    <svg xmlns="http://www.w3.org/2000/svg" class="mobile-menu-punkt-icon" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+</svg>
+<span>Вики</span>
+        </a>
+
+                    
+                    <a target="_blank" href="pod.html" class="mobile-menu-punkt">
+    <svg xmlns="http://www.w3.org/2000/svg" class="mobile-menu-punkt-icon" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"></path>
+</svg>
+<span>Поддержка</span>
+</a>
+            
+</div>
+
+</div> 
 
 
 <footer class="footer pt-5 pb-1 pb-lg-1">

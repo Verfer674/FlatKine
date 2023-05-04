@@ -147,3 +147,22 @@ header {
   opacity: 0.8; /* для эффекта нажатия на кнопку */
 }
 
+.buy-button {
+  background-color: #F2F2F2;
+  border: 2px solid #000;
+  border-radius: 5px;
+  color: #000;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.buy-button:hover {
+  background-color: #ccc;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

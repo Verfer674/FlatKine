@@ -110,75 +110,10 @@ header {
 
 
 
-.button-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* делаем блок высотой на весь экран */
-}
-
-.button {
-  display: inline-block;
-  padding: 16px 24px;
-  background-color: #808080; /* цвет фона */
-  color: #fff; /* цвет текста */
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 50px; /* радиус скругления */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* тень */
-  transition: all 0.3s ease-in-out; /* анимация при наведении */
-}
-
-.button:hover {
-  background-color: #000000; /* цвет фона при наведении */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* увеличиваем тень */
-  transform: translateY(-2px); /* сдвигаем кнопку вверх */
-}
-
-.button-wrapper {
-  background-image: url('Qiwi.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-left: 50px; /* чтобы устранить наложение текста на изображение */
-}
-
-.button-wrapper:hover {
-  opacity: 0.8; /* для эффекта нажатия на кнопку */
-}
-
-.buy-button {
-  background-color: #F2F2F2;
-  border: 2px solid #000;
-  border-radius: 5px;
-  color: #000;
-  font-size: 18px;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-.buy-button:hover {
-  background-color: #ccc;
-}
-
 .button-container {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-}
-
-
-
-
-html, body {
-  height: 100%;
-}
-
-.wrap {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .button {
@@ -191,7 +126,7 @@ html, body {
   font-weight: 700;
   color: #313133;
   background: #4fd170;
-background: linear-gradient(90deg, rgb(129, 202, 98) 0%, rgb(55, 152, 105) 100%);
+  background: linear-gradient(90deg, rgb(129, 202, 98) 0%, rgb(55, 152, 105) 100%);
   border: none;
   border-radius: 1000px;
   box-shadow: 12px 12px 24px rgba(90, 209, 79, 0.64);
@@ -200,10 +135,10 @@ background: linear-gradient(90deg, rgb(129, 202, 98) 0%, rgb(55, 152, 105) 100%)
   outline: none;
   position: relative;
   padding: 10px;
-  }
+}
 
-button::before {
-content: '';
+.button::before {
+  content: '';
   border-radius: 1000px;
   min-width: calc(300px + 12px);
   min-height: calc(60px + 12px);
@@ -222,13 +157,14 @@ content: '';
   transform: translateY(-6px);
 }
 
-button:hover::before, button:focus::before {
+.button:hover::before, .button:focus::before {
   opacity: 1;
 }
 
-button::after {
+.button::after {
   content: '';
-  width: 30px; height: 30px;
+  width: 30px; 
+  height: 30px;
   border-radius: 100%;
   border: 6px solid #00FFCB;
   position: absolute;
@@ -239,7 +175,7 @@ button::after {
   animation: ring 1.5s infinite;
 }
 
-button:hover::after, button:focus::after {
+.button:hover::after, .button:focus::after {
   animation: none;
   display: none;
 }
@@ -256,4 +192,36 @@ button:hover::after, button:focus::after {
     opacity: 0;
   }
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 20px;
+  z-index: 100;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px
+
 

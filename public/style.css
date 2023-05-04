@@ -109,77 +109,68 @@ header {
 }
 
 
-$color: #0cf;
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
 
-.button {
-  display: inline-block;
-  padding: .75rem 1.25rem;
-  border-radius: 10rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: .15rem;
-  transition: all .3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $color;
-    border-radius: 10rem;
-    z-index: -2;
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: darken($color, 15%);
-    transition: all .3s;
-    border-radius: 10rem;
-    z-index: -1;
-  }
-  &:hover {
-    color: #fff;
-    &:before {
-      width: 100%;
-    }
-  }
-}
-
-/* optional reset for presentation */
-* {
-  font-family: Arial;
-  text-decoration: none;
-  font-size: 20px;
-}
-.container {
-  padding-top: 50px;
-  margin: 0 auto;
+body, html {
   width: 100%;
-  text-align: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #5CA4EA;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
 }
-h1 {
-  text-transform: uppercase;
-  font-size: .8rem;
-  margin-bottom: 2rem;
-  color: #777;
+
+.containerr
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-span {
-  display: block;
-  margin-top: 2rem;
-  font-size: .7rem;
-  color: #777;
-  a {
-    font-size: .7rem;
-    color: #999;
-    text-decoration: underline;
-  }
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
 }

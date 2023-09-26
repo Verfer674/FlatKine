@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DinoCube Server</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    
+    @font-face {
+      font-family: 'Gilroy-Bold';
+      src: url('font/Gilroy-Bold.ttf') format('truetype');
+      font-family: 'Minecraft';
+      src: url('font/Minecraft.ttf') format('truetype');
+    }
+    
+    #container {
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    #menu {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+    #menu a {
+      display: inline-block;
+      margin-right: 20px;
+      text-decoration: none;
+      color: #454444;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 8px 16px;
+      opacity: 0.7;
+      transition: background-color 0.3s ease-in-out;
+    }
+    
+    #menu a:hover {
+      background-color: rgba(237, 238, 245, 0.888);
+      border-radius: 5px;
+    }
+    
+    #avatar {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+    }
+    
+    /* Добавлено */
+    #shadow {
+      position: absolute;
+      bottom: -20px;
+      left: 20px;
+      width: 100%;
+      height: 20px;
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+    
+    /* Добавлено */
+    #main-content {
+      margin-top: 20px;
+      text-align: center;
+      margin: 95px 25px 35px 45px;
+      line-height: 1.2;
+      position: relative; /* Added */
+    }
+    
+    /* Добавлено */
+    #main-content h1 {
+      font-family: 'Gilroy-Bold', Arial, sans-serif;
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+    
+    /* Добавлено */
+    #main-content p {
+      font-size: 16px;
+    }
+    
+    /* Добавлено */
+    .button {
+      display: inline-block;
+      padding: 15px 50px;
+      background-color: #46a6fa;
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+      cursor: pointer;
+    }
+    
+    /* Добавлено */
+    .button:hover {
+      background-color: #2084c8;
+    }
+    
+    /* Добавлено */
+    #banner-image {
+      position: absolute;
+      top: -200px;
+      left: 49%;
+      transform: translateX(-50%);
+      max-width: 110%;
+      height: auto;
+      z-index: -1; /* Added */
+    }
+    #display {
+      position: absolute;
+      top: 1800px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 110%;
+      height: auto;
+      z-index: -1; /* Added */
+    }
+
+    /* Добавлено */
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 600px;
+      padding: 10px;
+      background-color: #78cb88;
+      opacity: 0.8;
+      z-index: -2;
+      border-radius: 50px;
+    }
+
+    /* Добавлено */
+    .section-image img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    
+    /* Добавлено */
+    .section-text {
+      flex: 1;
+      margin-left: 40px;
+      max-width: 150%;
+      max-height: 150%;
+      font-family: 'Minecraft', Arial, sans-serif;
+    }
+    
+    /* Добавлено */
+    .section-text h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    
+    /* Добавлено */
+    .section-text p {
+      font-size: 24px;
+    }
+    
+    .swiper, swiper-container {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      overflow: hidden;
+      list-style: none;
+      padding: 0;
+      z-index: 1;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img id="avatar"  src="as/33.png" alt="Аватар сервера">
+    <div id="menu">
+      <a href="index.html">Главная</a>
+      <a href="https://flatkain.easydonate.ru/">Магазин</a>
+      <a href="https://batbarn.gitbook.io/dinocube-viki/">Вики</a>
+      <a href="stats.html">Статистика</a>
+    </div>
+    <div id="shadow"></div>
+  </div>
+  <div id="main-content">
+    <iframe src="https://batbarn.gitbook.io/dinocube" width="200%" height="900px"></iframe>
+
+
+  </div>
+
+</body>
+</html>

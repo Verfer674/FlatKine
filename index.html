@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FlatKain Server</title>
+<link rel="apple-touch-icon" sizes="180x180" href="landing/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="landing/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="landing/favicon-16x16.png">
+<link rel="manifest" href="landing/site.webmanifest">
+<link rel="mask-icon" href="landing/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+  <style>
+    /* Ваш стиль остается без изменений */
+    body {
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    @font-face {
+      font-family: 'Gilroy-Bold';
+      src: url('font/Gilroy-Bold.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'MinecraftTen';
+      src: url('font/MinecraftTen-VGORe.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Montserrat-SemiBold';
+      src: url('font/Montserrat-SemiBold.ttf') format('truetype');
+    }
+
+    #header {
+      background-color: #FFFFFF;
+      border-radius: 0;
+      box-shadow: none;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+    }
+
+    #logo {
+      display: flex;
+      align-items: center;
+    }
+
+    #avatar {
+      width: 95px;
+      height: 85px;
+      border-radius: 50%;
+    }
+
+    #logo-text {
+      font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+      font-size: 30px;
+      height: 30px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    #logo-link {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: center;
+    }
+
+    #menu {
+      text-align: center;
+      margin-bottom: 10px;
+      font-family: 'Montserrat-SemiBold';
+      margin-right: 175px;
+      flex-grow: 1;
+    }
+
+    #menu a {
+      display: inline-block;
+      margin-right: 20px;
+      text-decoration: none;
+      color: #454444;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 8px 16px;
+      opacity: 0.7;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    #menu a#home {
+      background: linear-gradient(to bottom, #2084c8, #46a6fa);
+      color: #FFFFFF;
+      border-radius: 5px;
+    }
+
+    #menu a:hover {
+      background-color: rgba(237, 238, 245, 0.888);
+      border-radius: 5px;
+    }
+
+    #main-content {
+      margin-top: 20px;
+      text-align: center;
+      margin: 95px 25px 35px 45px;
+      line-height: 1.2;
+      position: relative;
+    }
+
+    #main-content h1 {
+      font-family: 'Gilroy-Bold', Arial, sans-serif;
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    #main-content p {
+      font-size: 16px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 50px;
+      background-color: #46a6fa;
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #2084c8;
+    }
+
+    #banner-image {
+      position: absolute;
+      top: -200px;
+      width: 2080px;
+      left: 49%;
+      transform: translateX(-50%);
+      max-width: -1010%;
+      height: auto;
+      z-index: -1;
+    }
+
+    #display {
+      position: absolute;
+      top: 1800px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 110%;
+      height: auto;
+      z-index: -1;
+    }
+
+    .section {
+      display: flex;
+      justify-content: space-between;
+      max-width: 60%;
+      margin-left: 370px;
+      margin-top: 600px;
+      padding: 20px;
+      background: linear-gradient(to bottom, #32e0ff, #46a6fa);
+      opacity: 0.8;
+      z-index: -2;
+      border-radius: 50px;
+    }
+
+    .section1 {
+      display: flex;
+      justify-content: space-between;
+      max-width: 60%;
+      margin-left: 370px;
+      margin-top: 150px;
+      padding: 20px;
+      background: linear-gradient(to bottom, #32e0ff, #46a6fa);
+      opacity: 0.8;
+      z-index: -2;
+      border-radius: 50px;
+    }
+
+    .section-image img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .section-image1 img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .section-text {
+      flex: 1;
+      margin-left: 40px;
+      max-width: 150%;
+      max-height: 150%;
+      font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+    }
+
+    .section-text1 {
+      flex: 1;
+      margin-left: 40px;
+      max-width: 150%;
+      max-height: 150%;
+      font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+    }
+
+    .section-text h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .section-text1 h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .section-text p {
+      font-size: 24px;
+    }
+
+    .section-text1 p {
+      font-size: 24px;
+    }
+
+    #tabs {
+      display: flex;
+      justify-content: space-between;
+      max-width: 45%;
+      margin-left: 538px;
+      margin-top: 200px;
+      border: 200px;
+      border-color: #ac1d1d;
+      background: linear-gradient(to bottom, #d2f7ff, #c7e5ff);
+      z-index: -2;
+      border-radius: 50px;
+      padding: 10px;
+    }
+
+    
+
+    .tab {
+      cursor: pointer;
+      padding: 10px 20px;
+      font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+      font-size: 30px;
+      color: #353535;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out;
+      box-shadow: #353535;
+    }
+
+    .tab:hover {
+      background-color: #ededed;
+      opacity: 0.8;
+    }
+
+    .tab-content-text {
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+    }
+
+    .tab-content-image img {
+      max-width: 100%;
+      max-height: 100%;
+      margin-left: 145px;
+    }
+
+    #berk {
+      font-size: 28px;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 2750px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+    }
+
+    .berk h2 {
+      font-size: 28px;
+      font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+    }
+
+    footer {
+      background-color: rgba(93, 91, 91, 0.8);
+      color: #575656;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+    }
+
+    #footer-content {
+      background-color: rgba(140, 140, 140, 0.8);
+      color: rgb(255, 255, 255);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+    }
+
+    #footer-content img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    #footer-content a {
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+    }
+
+    #footer-content a:hover {
+      text-decoration: underline;
+    }
+
+    .tab-content {
+  display: none; /* Начально скрываем содержимое */
+}
+
+/* Стили для tab-content-background */
+.tab-content-background {
+  background: linear-gradient(to bottom, #55e0ff, #b7fafb);
+  opacity: 1;
+  padding: 20px; /* Отступ вокруг содержимого */
+  border-radius: 20px; /* Закругление углов */
+  margin-top: 10px; /* Отступ сверху, чтобы контент не прилипал к вкладкам */
+  margin-left: 620px;
+  width: 700px;
+  box-shadow:0 0 10px #69c1d4;
+}
+    /* ... Ваш стиль ... */
+
+    .tab.active {
+      background-color: #ededed;
+      opacity: 0.8;
+    }
+
+    @media screen and (min-width: 768px) {
+      /* Добавьте стили для десктопной версии здесь */
+
+    }
+
+    /* Определение стилей для мобильной версии */
+
+    @media screen and (max-width: 767px) {
+      /* Уберите ненужные элементы в мобильной версии */
+
+      #menu {
+        display: none;
+      }
+
+      #main-content {
+        margin: 20px;
+      }
+
+      /* Добавьте стили для мобильной версии здесь */
+      #header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #logo {
+        margin-bottom: 20px;
+      }
+
+      #avatar {
+        width: 60px;
+        height: 60px;
+      }
+
+      #logo-text {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+
+      #main-content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      #main-content p {
+        font-size: 14px;
+      }
+
+      .button {
+        padding: 10px 30px;
+        font-size: 14px;
+      }
+
+      #banner-image {
+        top: -100px;
+        width: 100%;
+        max-width: none;
+        left: 0;
+        transform: none;
+      }
+
+      .section, .section1 {
+        max-width: 100%;
+        margin-left: 0;
+        padding: 10px;
+        border-radius: 0;
+      }
+
+      .section-image img, .section-image1 img {
+        margin-left: 0;
+      }
+
+      .section-text, .section-text1 {
+        margin-left: 0;
+        max-width: 100%;
+      }
+
+      .section-text h2, .section-text1 h2 {
+        font-size: 18px;
+      }
+
+      .section-text p, .section-text1 p {
+        font-size: 12px;
+      }
+
+      #berk {
+        font-size: 18px;
+        top: 1400px;
+      }
+
+      .berk h2 {
+        font-size: 18px;
+      }
+
+      #tabs {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+
+      .tab {
+        padding: 8px 16px;
+        font-size: 16px;
+      }
+
+      .tab-content-background {
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 0;
+        width: 100%;
+      }
+
+      .tab-content-text {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <div id="logo">
+      <a id="logo-link" href="index.html">
+        <img id="avatar" src="33.png" alt="Аватар сервера">
+        <span id="logo-text">FlatKain</span>
+      </a>
+    </div>
+    <div id="menu">
+      <a href="index.html" id="home">Главная</a>
+      <a href="https://flatkain.easydonate.ru/">Магазин</a>
+      <a href="https://batbarn.gitbook.io/dinocube-viki/">Вики </a>
+    </div>
+  </div>
+  <div id="main-content">
+    <h1>FlatKain - приватный</h1>
+    <h1>ванильный рп сервер</h1>
+    <h1>для тебя и друзей!</h1>
+    <p>Здесь ты сможешь сделать все, купи проходку и начни играть!</p>
+    <a class="button" href="https://flatkain.easydonate.ru/">Купи проходку за 100₽</a>
+    <img id="banner-image" src="landing/banner.png" alt="Картинка баннера">
+    <div class="section">
+      <div class="section-text">
+        <h2>Plasmovoice или голосовой чат</h2>
+        <p>Мод для голосового чата с позиционированием звука и множеством функций, с помощью него рп станет лучше.</p>
+        <div class="section-image">
+          <img src="landing/image8.webp" alt="Картинка">
+        </div>
+      </div>
+    </div>
+    <div class="section1">
+      <div class="section-text1">
+        <h2>Emotecraft или Эмоции</h2>
+        <p>Emote Craft позволит вам ярко выражать свои эмоции на сервере, что делает игру атмосфернее. Необходимо скачать модификацию и дополнения к нему.</p>
+        <div class="section-image1">
+          <img src="landing/image7.webp" alt="Картинка слева">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="berk">
+    <h2>Плюсы нашего сервера</h2>
+  </div>
+  <div id="tabs">
+    <div class="tab active" id="online-tab">Онлайн</div>
+    <div class="tab" id="community-tab">Комьюнити</div>
+    <div class="tab" id="mechanics-tab">Механика</div>
+    <div class="tab" id="walkthrough-tab">Проходка</div>
+  </div>
+  <div class="tab-content">
+    <div class="tab-content-background">
+      <p class="tab-content-text"></p>
+      <div class="tab-content-image">
+        <img src="" alt="">
+      </div>
+    </div>
+  </div>
+  <script>
+    function showTabContent(tabId, text, imagePath) {
+      const tabContentText = document.querySelector('.tab-content-text');
+      tabContentText.textContent = text;
+
+      const tabContentImage = document.querySelector('.tab-content-image img');
+      tabContentImage.src = imagePath;
+
+      const tabContent = document.querySelector('.tab-content');
+      tabContent.style.display = 'block';
+
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+
+      document.getElementById(tabId).classList.add('active');
+    }
+
+    document.getElementById('online-tab').addEventListener('click', function () {
+      showTabContent('online-tab', 'В среднем днем у нас от 10 онлайна', '1.webp');
+    });
+
+    document.getElementById('community-tab').addEventListener('click', function () {
+      showTabContent('community-tab', 'Комьюнити у нас доброе и отзывчивое', 'rules.webp');
+    });
+
+    document.getElementById('mechanics-tab').addEventListener('click', function () {
+      showTabContent('mechanics-tab', 'На нашем сервере есть большое количество новых механик', 'trade.webp');
+    });
+
+    document.getElementById('walkthrough-tab').addEventListener('click', function () {
+      showTabContent('walkthrough-tab', 'Проходка стоит всего - 100р', 'event.webp');
+    });
+
+    // Симулируем клик на вкладку "Онлайн" при загрузке страницы
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('online-tab').click();
+    });
+  </script>
+  </div>
+  <div style="margin: 200px;"></div>
+</body>
+<footer>
+  <div id="footer-content">
+    <div>
+      <img src="33.png" alt="Аватар">
+      <span>FlatKain - Все права защищены. </span>
+      <span>Вся размещенная информация на сайте не является публичной офертой. We are in no way affiliated with or endorsed by Mojang, AB.</span>
+    </div>
+    <div>
+      Designed by <a href="https://www.youtube.com/channel/UC5HVE22UeFtziv7QJ3vHjpg" target="_blank">Verdex</a>
+    </div>
+  </div>
+</footer>
+
+</html>

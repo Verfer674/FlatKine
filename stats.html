@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FlatKain Server</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    @font-face {
+      font-family: 'Gilroy-Bold';
+      src: url('font/Gilroy-Bold.ttf') format('truetype');
+      font-family: 'MinecraftTen';
+      src: url('font/MinecraftTen-VGORe.ttf') format('truetype');
+      font-family: 'Montserrat-SemiBold';
+      src: url('font/Montserrat-SemiBold.ttf') format('truetype');  
+    }
+
+    #header {
+      background-color: #FFFFFF;
+      border-radius: 0;
+      box-shadow: none;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between; /* To separate the logo and tabs */
+      align-items: center; /* To vertically center content */
+      height: 100px;
+    }
+
+    #logo {
+      display: flex;
+      align-items: center;
+    }
+
+    #avatar {
+      width: 95px;
+      height: 85px;
+      border-radius: 50%;
+    }
+
+    #logo-text {
+      font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+      font-size: 30px;
+      height: 30px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    #logo-link {
+      text-decoration: none; /* Remove underlines from the link */
+      color: inherit; /* Inherit the text color */
+      display: flex;
+      align-items: center; /* To vertically center the text */
+    }
+
+    #menu {
+      text-align: center;
+      margin-bottom: 10px;
+      font-family: 'Montserrat-SemiBold';
+      margin-right: 175px;
+      flex-grow: 1; /* Allow the menu to take up available space */
+    }
+
+    #menu a {
+      display: inline-block;
+      margin-right: 20px;
+      text-decoration: none;
+      color: #454444;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 8px 16px;
+      opacity: 0.7;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    #menu a#home {
+      background: linear-gradient(to bottom, #2084c8, #46a6fa); /* Blue gradient background for Home tab */
+      color: #FFFFFF;
+      border-radius: 5px;
+    }
+
+    #menu a:hover {
+      background-color: rgba(237, 238, 245, 0.888);
+      border-radius: 5px;
+    }
+
+    #main-content {
+      margin-top: 20px;
+      text-align: center;
+      margin: 95px 25px 35px 45px;
+      line-height: 1.2;
+      position: relative;
+    }
+
+    #main-content h1 {
+      font-family: 'Gilroy-Bold', Arial, sans-serif;
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    #main-content p {
+      font-size: 16px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 50px;
+      background-color: #46a6fa;
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #2084c8;
+    }
+
+    #banner-image {
+      position: absolute;
+      top: -200px;
+      width: 2080px;
+      left: 49%;
+      transform: translateX(-50%);
+      max-width: -1010%;
+      height: auto;
+      z-index: -1;
+    }
+
+    #display {
+      position: absolute;
+      top: 1800px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 110%;
+      height: auto;
+      z-index: -1;
+    }
+
+    .section {
+      display: flex;
+      justify-content: space-between;
+      max-width: 60%;
+      margin-left: 370px;
+      margin-top: 600px;
+      padding: 20px;
+      background: linear-gradient(to bottom, #32e0ff, #46a6fa);
+      opacity: 0.8;
+      z-index: -2;
+      border-radius: 50px;
+    }
+
+    .section1 {
+      display: flex;
+      justify-content: space-between;
+      max-width: 60%;
+      margin-left: 370px;
+      margin-top: 150px;
+      padding: 20px;
+      background: linear-gradient(to bottom, #32e0ff, #46a6fa);
+      opacity: 0.8;
+      z-index: -2;
+      border-radius: 50px;
+    }
+
+    .section-image img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .section-image1 img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .section-text {
+      flex: 1;
+      margin-left: 40px;
+      max-width: 150%;
+      max-height: 150%;
+      font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+    }
+
+    .section-text1 {
+      flex: 1;
+      margin-left: 40px;
+      max-width: 150%;
+      max-height: 150%;
+      font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+    }
+
+    .section-text h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .section-text1 h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .section-text p {
+      font-size: 24px;
+    }
+
+    .section-text1 p {
+      font-size: 24px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div id="logo">
+      <a id="logo-link" href="index.html">
+        <img id="avatar" src="as/33.png" alt="Аватар сервера">
+        <span id="logo-text">FlatKain</span>
+      </a>
+    </div>
+    <div id="menu">
+      <a href="index.html" id="home">Главная</a>
+      <a href="https://flatkain.easydonate.ru/">Магазин</a>
+      <a href="https://batbarn.gitbook.io/dinocube-viki/">Вики </a>
+      <a href="stats.html">Статистика</a>
+    </div>
+  </div>
+  <head>
+    <!-- Add your existing CSS styles here -->
+  </head>
+  <body>
+    <div id="header">
+      <!-- Your header code here -->
+    </div>
+    <div id="main-content">
+    </div>
+  </body>
+</body>
+</html>
